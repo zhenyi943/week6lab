@@ -73,7 +73,9 @@ public class shoppingList extends HttpServlet {
         }
 
         if (username == null || username.equals("")) {
+            request.setAttribute("message", "Null username");
             getServletContext().getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
+            
         } else {
             getServletContext().getRequestDispatcher("/WEB-INF/shoppingList.jsp").forward(request, response);
         }
