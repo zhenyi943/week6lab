@@ -9,14 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Shopping List</title>
     </head>
 <body>
         <h1>Shopping List</h1>
 
         <form action="" method="post">
             
-            <p>Hello, ${user} <a href="shoppinglist?action=logout">Logout</a></p>
+            <p>Hello, ${user} 
+                <a href="shoppinglist?action=logout">Logout</a></p>
         </form>
         
         <h3>List</h3>
